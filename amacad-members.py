@@ -154,6 +154,6 @@ for p in tqdm(range(0, max_page_num)):
         continue
 
     if p % 100 == 0:
-        dump(all_fellows, open("../data/amacad-members.json", "w", encoding="utf8"))
+        dump(all_fellows, open("data/amacad-members.json", "w", encoding="utf8"))
 
-dump(all_fellows, open("../data/amacad-members.json", "w", encoding="utf8"))
+dump(all_fellows, open("data/amacad-members.json", "w", encoding="utf8"))
