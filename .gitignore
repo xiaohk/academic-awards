@@ -1,0 +1,9 @@
+.DS_Store
+test*.ipynb
+.ipynb_checkpoints
+Pipfile.lock
+explorer/*/*.ndjson
+_site
+Gemfile.lock
+Gemfile
+notebooks
