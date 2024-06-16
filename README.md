@@ -1,9 +1,10 @@
 # Academic Award Datasets
 
 [![license](https://img.shields.io/badge/License-MIT-brightscreen)](https://github.com/xiaohk/academic-award/blob/main/LICENSE)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.11732208.svg)](https://doi.org/10.5281/zenodo.11732208)
 
-Datasets of recipients of several academic awards, such as ACM Fellow, IEEE
-Fellow, NAS Members, AAAI Fellow, and AAAS Fellow.
+Recipient datasets of academic awards, including ACM Fellow, IEEE Fellow, NAS
+Members, AAAI Fellow, and AAAS Fellow.
 
 | Award                                                                      | Description                                                                                                                             | Fields                                                       |     Years | Number |
 | :------------------------------------------------------------------------- | :-------------------------------------------------------------------------------------------------------------------------------------- | :----------------------------------------------------------- | --------: | -----: |
@@ -19,3 +20,20 @@ Fellow, NAS Members, AAAI Fellow, and AAAS Fellow.
 | [ACM Turing Award](./data/acm-turing-award.json)                           | [Association for Computing A.M. Turing Award](https://amturing.acm.org/)                                                                | `name`, `year`                                               | 1966–2023 |     77 |
 | [IEEE Fellows](./data/ieee-fellows.json)                                   | [Institute of Electrical and Electronics Engineers Fellow Program](https://www.ieee.org/membership/fellows/index.html)                  | `name`, `year`, `region`, `category`, `citation`             | 1964–2024 |  7,523 |
 | [NAS Member](./data/nas-members.json)                                      | [National Academy of Sciences Member](https://www.nasonline.org/membership/)                                                            | `name`, `year`, `affiliation`, `primary`, `secondary`        | 1962–2023 |  3,108 |
+
+## Citation
+
+If you find these datasets useful, please consider citing them.
+
+```latex
+@misc{wangAcademicAwardRecipient2024,
+  title = {Academic {{Award Recipient Datasets}}},
+  author = {Wang, Zijie J.},
+  year = {2024},
+  doi = {10.5281/ZENODO.11732208},
+  url = {https://zenodo.org/doi/10.5281/zenodo.11732208},
+  urldate = {2024-06-16},
+  copyright = {Creative Commons Attribution 4.0 International},
+  howpublished = {Zenodo}
+}
+```
