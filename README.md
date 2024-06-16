@@ -21,11 +21,17 @@ Members, AAAI Fellow, and AAAS Fellow.
 | [IEEE Fellows](./data/ieee-fellows.json)                                   | [Institute of Electrical and Electronics Engineers Fellow Program](https://www.ieee.org/membership/fellows/index.html)                  | `name`, `year`, `region`, `category`, `citation`             | 1964–2024 |  7,523 |
 | [NAS Member](./data/nas-members.json)                                      | [National Academy of Sciences Member](https://www.nasonline.org/membership/)                                                            | `name`, `year`, `affiliation`, `primary`, `secondary`        | 1962–2023 |  3,108 |
 
+## Contribution
+
+Your contribution is appreciated! Please submit a PR to update existing award
+recipient lists or add new ones. The scraping scripts can be found in the root
+folder.
+
 ## Citation
 
 If you find these datasets useful, please consider citing them.
 
-```latex
+```bibtex
 @misc{wangAcademicAwardRecipient2024,
   title = {Academic {{Award Recipient Datasets}}},
   author = {Wang, Zijie J.},
@@ -37,3 +43,13 @@ If you find these datasets useful, please consider citing them.
   howpublished = {Zenodo}
 }
 ```
+
+## License
+
+The software and datasets are available under the [MIT License](./LICENSE).
+
+## Contact
+
+If you have any questions, feel free to
+[open an issue](https://github.com/xiaohk/academic-award/issues/new) or contact
+[Jay Wang](https://zijie.wang).
