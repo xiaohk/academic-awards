@@ -40,6 +40,7 @@ for h2 in h2s:
                     break
 
                 person["name"] = elements[0].replace("\xa0", "").rstrip(",").rstrip(" ")
+                person["name"] = re.sub(r"\\u000a", "", person["name"])
                 person["affiliation"] = elements[1].text.replace("\xa0", "")
 
                 if elements[2].name == "br":
@@ -65,10 +66,11 @@ for h2 in h2s:
                         "contribution": "",
                         "year": year,
                     }
+                    person["name"] = re.sub(r"\\u000a", "", person["name"])
 
                 elif element.name == "em":
                     person["affiliation"] = element.text.replace("\xa0", "")
 
             people.append(person)
 
-dump(people, open("data/aaai-fellows.json", "w", encoding="utf8"))
+dump(people, open("data/aaai-fellows.json", "w", encoding="utf8"), ensure_ascii=False)
